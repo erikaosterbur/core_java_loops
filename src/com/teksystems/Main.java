@@ -1,13 +1,21 @@
 package com.teksystems;
 
+import java.sql.SQLOutput;
+import java.text.DecimalFormat;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        problemOne();
-        problemTwo();
-        problemThree();
-        problemFour();
-        problemFive();
+//        problemOne();
+//        problemTwo();
+//        problemThree();
+//        problemFour();
+//        problemFive();
+//        problemSix();
+        problemSeven();
     }
 
     public static void problemOne() {
@@ -62,4 +70,37 @@ public class Main {
         }
     }
 
+    public static void problemSix () {
+        /* Write a program that uses nested for-loops to output the following:
+            Week 1:
+            Day 1
+            Day 2
+            Day 3
+            Day 4
+            Day 5
+            Week 2:
+            Day 1
+            Day 2
+            Day 3
+            Day 4
+            Day 5*/
+    }
+
+    public static void problemSeven () {
+        /* Write a program that returns all the available palindromes within 10 and 200.
+        The following output will be produced:
+                11, 22, 33, 44, 55, 66, 77, 88, 99, 101, 111, 121, 131, 141, 151, 161, 171, 181, 191,*/
+
+        for(int i = 10; i < 200; i++){
+            String s = String.valueOf(i);
+            int l = s.length();
+             char first = s.charAt(0);
+             char last = s.charAt(l-1);
+             if(first == last){
+                 System.out.println(i);
+             }
+        }
+    }
 }
+
+
