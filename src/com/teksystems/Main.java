@@ -9,13 +9,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-//        problemOne();
-//        problemTwo();
-//        problemThree();
-//        problemFour();
-//        problemFive();
-//        problemSix();
+        problemOne();
+        problemTwo();
+        problemThree();
+        problemFour();
+        problemFive();
+        problemSix();
         problemSeven();
+        problemEight();
+        problemNine();
     }
 
     public static void problemOne() {
@@ -84,6 +86,13 @@ public class Main {
             Day 3
             Day 4
             Day 5*/
+        for(int i = 1; i <= 2; i++){
+            System.out.printf("Week %d:\n",i);
+            for(int j = 1; j <=5; j++){
+                System.out.printf("Day %d\n", j);
+            }
+        }
+
     }
 
     public static void problemSeven () {
@@ -100,6 +109,18 @@ public class Main {
                  System.out.println(i);
              }
         }
+    }
+
+    public static void problemEight () {
+        /* Write a program that prints the Fibonacci Sequence from 0 to 50.
+        The following output will be produced: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,*/
+
+    }
+
+    public static void problemNine () {
+        /* Write a program that nests a for-loop inside another.
+        Print out the inner and outer variable (e.g., i or j)
+        in the inner loop (e.g., System.out.println("Inner loop: i: " + i + ", j: " + j);).*/
     }
 }
 
