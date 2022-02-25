@@ -9,14 +9,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-//        problemOne();
-//        problemTwo();
-//        problemThree();
-//        problemFour();
-//        problemFive();
-//        problemSix();
-//        problemSeven();
-//        problemEight();
+        problemOne();
+        problemTwo();
+        problemThree();
+        problemFour();
+        problemFive();
+        problemSix();
+        problemSeven();
+        problemEight();
         problemNine();
     }
 
@@ -113,10 +113,25 @@ public class Main {
 
     public static void problemEight () {
         /* Write a program that prints the Fibonacci Sequence from 0 to 50.
-        The following output will be produced: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,*/
+        The following output will be produced: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34*/
 
+        //initialize variables to hold numbers in the sequence
+        int num1 = 0, num2 = 1, num3;
 
+        //prints 0 and 1, the first two numbers in the sequence
+        System.out.print(num1 + " " + num2);
 
+        //loop that prints the rest of the numbers in the sequence
+        //we only need 10 numbers in the sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+        for(int i = 2; i < 10; i++) {
+            //sets value of num3 to the sum of the previous two numbers in the sequence
+            num3 = num1 + num2;
+            //prints out next number in the sequence
+            System.out.print(" " + num3);
+            //sets num1 to num2 and num2 to num3, advancing the sequence
+            num1 = num2;
+            num2 = num3;
+        }
     }
 
     public static void problemNine () {
