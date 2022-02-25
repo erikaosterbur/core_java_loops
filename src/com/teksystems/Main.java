@@ -9,14 +9,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        problemOne();
-        problemTwo();
-        problemThree();
-        problemFour();
-        problemFive();
-        problemSix();
-        problemSeven();
-        problemEight();
+//        problemOne();
+//        problemTwo();
+//        problemThree();
+//        problemFour();
+//        problemFive();
+//        problemSix();
+//        problemSeven();
+//        problemEight();
         problemNine();
     }
 
@@ -115,12 +115,20 @@ public class Main {
         /* Write a program that prints the Fibonacci Sequence from 0 to 50.
         The following output will be produced: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,*/
 
+
+
     }
 
     public static void problemNine () {
         /* Write a program that nests a for-loop inside another.
         Print out the inner and outer variable (e.g., i or j)
         in the inner loop (e.g., System.out.println("Inner loop: i: " + i + ", j: " + j);).*/
+
+        for(int i = 0; i <= 10; i++){
+            for(int j = 0; j <= 5; j++){
+                System.out.println("Inner loop: i: " + i + ", j: " + j);
+            }
+        }
     }
 }
 
